@@ -3,129 +3,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curator.io - Digital Curators</title>
+    <title>Devs.io</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- FONTE -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="top-header">
-        <div class="logo">Curator.io</div>
-        <nav class="top-nav">
-            <a href="#" class="active">Explore</a>
-            <a href="#">Community</a>
-            <a href="#">Trending</a>
+    <!-- barra de navegação -->
+    <header class="cabecalho-topo">
+        <div class="logo">
+            <a href="index.html">
+            <img src="/img/devs-logo.png" alt="Devs.io">
+            </a>
+        </div>
+        <nav class="navegacao-topo">
+            <a href="index.html" class="ativo">Explorar</a>
+            <a href="#">Comunidade</a>
+            <a href="#">Sobre</a>
         </nav>
-        <div class="header-actions">
-            <button class="icon-btn" id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
-            <img src="https://i.pravatar.cc/150?img=11" alt="User Avatar" class="user-avatar">
+        <div class="acoes-cabecalho">
+            <button class="botao-icone" id="notificacoes"><i class="fa-solid fa-bell"></i></button>
+            <button class="botao-icone" id="alternar-tema"><i class="fa-solid fa-moon"></i></button>
+            <img src="/img/secure.svg" alt="User Avatar" class="avatar-usuario">
         </div>
     </header>
 
+    <!-- área dos cards -->
     <main class="container">
-        <section class="hero-section">
-            <h1>Digital Curators</h1>
-            <p>Meet the visionaries shaping the future of digital experiences through<br>editorial authority and technical precision.</p>
+        <section class="secao-destaque">
+            <h1>Conectando você aos melhores desenvolvedores</h1>
+            <p>Encontre profissionais qualificados para transformar <br> suas ideias em soluções digitais reais</p>
         </section>
 
-        <section class="cards-grid">
+        <section class="grade-cards">
             <article class="card">
-                <div class="card-header">
-                    <img src="https://i.pravatar.cc/150?img=11" alt="Lucas Rocha" class="profile-img">
-                    <div class="role-icon"><i class="fa-solid fa-palette"></i></div>
+                <div class="cabecalho-card">
+                    <img src="/img/gamer.svg" alt="Lucas Andrade" class="imagem-perfil">
+                    <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
                 </div>
-                <div class="card-body">
-                    <h2>Lucas Rocha</h2>
-                    <span class="role">Senior Developer</span>
-                    <p>Specializing in high-performance cloud architectures and distributed systems. Passionate about building scalable solutions for global impact.</p>
+                <div class="corpo-card">
+                    <h2>Lucas Andrade</h2>
+                    <span class="funcao">Desenvolvedor de Jogos</span>
+                    <p>Desenvolvedor com 6 anos de experiência. Especialista em criação de jogos em engines como Unity e Unreal.</p>
+                    <div class="tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">3D Graphics</span>
+                        <span class="tag">Game Development</span>
+                        <span class="tag">Unity</span>
+                        <span class="tag">Unreal</span>
+                    </div>
+                </div>
+                <div class="rodape-card">
+                    <div class="estatisticas">
+                        <div class="estatistica">
+                            <strong>1200</strong>
+                            <span>SEGUIDORES</span>
+                        </div>
+                        <div class="estatistica">
+                            <strong>850</strong>
+                            <span>SEGUINDO</span>
+                        </div>
+                    </div>
+                    <button class="botao-seguir">Seguir</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="cabecalho-card">
+                    <img src="/img/back.svg" alt="Carlos Mendes" class="imagem-perfil">
+                    <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
+                </div>
+                <div class="corpo-card">
+                    <h2>Carlos Mendes</h2>
+                    <span class="funcao">Engenheiro Full-Stack</span>
+                    <p>Desenvolvedor com 8 anos de experiência. Especialista em arquiteturas escaláveis e performance web.</p>
                     <div class="tags">
                         <span class="tag">React</span>
                         <span class="tag">Node.js</span>
-                        <span class="tag">AWS</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">TypeScript</span>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <div class="stats">
-                        <div class="stat">
-                            <strong>1200</strong>
-                            <span>FOLLOWERS</span>
-                        </div>
-                        <div class="stat">
-                            <strong>850</strong>
-                            <span>FOLLOWING</span>
-                        </div>
-                    </div>
-                    <button class="follow-btn">Seguir</button>
-                </div>
-            </article>
-
-            <article class="card">
-                <div class="card-header">
-                    <img src="https://i.pravatar.cc/150?img=5" alt="Juliana Silva" class="profile-img">
-                    <div class="role-icon"><i class="fa-solid fa-palette"></i></div>
-                </div>
-                <div class="card-body">
-                    <h2>Juliana Silva</h2>
-                    <span class="role">UI Designer</span>
-                    <p>Crafting immersive digital experiences with a focus on emotional design and accessibility. Believer in the power of visual storytelling.</p>
-                    <div class="tags">
-                        <span class="tag">Figma</span>
-                        <span class="tag">Tailwind</span>
-                        <span class="tag">Motion</span>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <div class="stats">
-                        <div class="stat">
+                <div class="rodape-card">
+                    <div class="estatisticas">
+                        <div class="estatistica">
                             <strong>3420</strong>
-                            <span>FOLLOWERS</span>
+                            <span>SEGUIDORES</span>
                         </div>
-                        <div class="stat">
+                        <div class="estatistica">
                             <strong>910</strong>
-                            <span>FOLLOWING</span>
+                            <span>SEGUINDO</span>
                         </div>
                     </div>
-                    <button class="follow-btn">Seguir</button>
+                    <button class="botao-seguir">Seguir</button>
                 </div>
             </article>
 
             <article class="card">
-                <div class="card-header">
-                    <img src="https://i.pravatar.cc/150?img=8" alt="Marco Polo" class="profile-img">
-                    <div class="role-icon"><i class="fa-solid fa-palette"></i></div>
+                <div class="cabecalho-card">
+                    <img src="/img/data.svg" alt="Beatriz Ferreira" class="imagem-perfil">
+                    <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
                 </div>
-                <div class="card-body">
-                    <h2>Marco Polo</h2>
-                    <span class="role">Product Lead</span>
-                    <p>Defining product visions that bridge the gap between user needs and business goals. Obsessed with data-driven decision making.</p>
+                <div class="corpo-card">
+                    <h2>Beatriz Ferreira</h2>
+                    <span class="funcao">Cientista de Dados</span>
+                    <p>Transformo dados em insights poderosos. Fascinada por machine learning e visualização de dados, sempre extraindo informações claras.</p>
                     <div class="tags">
-                        <span class="tag">Strategy</span>
-                        <span class="tag">Agile</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">TensorFlow</span>
                         <span class="tag">SQL</span>
+                        <span class="tag">Banco de Dados</span>
+                        <span class="tag">Firebase</span>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <div class="stats">
-                        <div class="stat">
+                <div class="rodape-card">
+                    <div class="estatisticas">
+                        <div class="estatistica">
                             <strong>890</strong>
-                            <span>FOLLOWERS</span>
+                            <span>SEGUIDORES</span>
                         </div>
-                        <div class="stat">
+                        <div class="estatistica">
                             <strong>1100</strong>
-                            <span>FOLLOWING</span>
+                            <span>SEGUINDO</span>
                         </div>
                     </div>
-                    <button class="follow-btn">Seguir</button>
+                    <button class="botao-seguir">Seguir</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="cabecalho-card">
+                    <img src="/img/server.svg" alt="Bruno Oliveira" class="imagem-perfil">
+                    <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
+                </div>
+                <div class="corpo-card">
+                    <h2>Bruno Oliveira</h2>
+                    <span class="funcao">Administrador de Sistemas (SysAdmin)</span>
+                    <p>Profissional com 8 anos de experiência. Especialista em gerenciamento de servidores, redes e infraestrutura.</p>
+                    <div class="tags">
+                        <span class="tag">SysAdmin</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">WindowsServer</span>
+                        <span class="tag">Redes</span>
+                        <span class="tag">Servidores</span>
+                    </div>
+                </div>
+                <div class="rodape-card">
+                    <div class="estatisticas">
+                        <div class="estatistica">
+                            <strong>2519</strong>
+                            <span>SEGUIDORES</span>
+                        </div>
+                        <div class="estatistica">
+                            <strong>1284</strong>
+                            <span>SEGUINDO</span>
+                        </div>
+                    </div>
+                    <button class="botao-seguir">Seguir</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="cabecalho-card">
+                    <img src="/img/front.svg" alt="Julia Soares" class="imagem-perfil">
+                    <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
+                </div>
+                <div class="corpo-card">
+                    <h2>Julia Soares</h2>
+                    <span class="funcao">Desenvolvedora Front-end</span>
+                    <p>Profissional com 5 anos de experiência. Focada em interfaces modernas, responsividade e experiência do usuário.</p>
+                    <div class="tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">Javascript</span>
+                        <span class="tag">Figma</span>
+                    </div>
+                </div>
+                <div class="rodape-card">
+                    <div class="estatisticas">
+                        <div class="estatistica">
+                            <strong>762</strong>
+                            <span>SEGUIDORES</span>
+                        </div>
+                        <div class="estatistica">
+                            <strong>442</strong>
+                            <span>SEGUINDO</span>
+                        </div>
+                    </div>
+                    <button class="botao-seguir">Seguir</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="cabecalho-card">
+                    <img src="/img/secure.svg" alt="Eduardo Souza" class="imagem-perfil">
+                    <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
+                </div>
+                <div class="corpo-card">
+                    <h2>Eduardo Souza</h2>
+                    <span class="funcao">Especialista em Segurança da Informação</span>
+                    <p>Profissional com 6 anos de experiência. Focado na proteção de dados e análise de vulnerabilidades.</p>
+                    <div class="tags">
+                        <span class="tag">Cybersecurity</span>
+                        <span class="tag">Seguranca</span>
+                        <span class="tag">Pentest</span>
+                        <span class="tag">Criptografia</span>
+                        <span class="tag">Firewall</span>
+                    </div>
+                </div>
+                <div class="rodape-card">
+                    <div class="estatisticas">
+                        <div class="estatistica">
+                            <strong>1639</strong>
+                            <span>SEGUIDORES</span>
+                        </div>
+                        <div class="estatistica">
+                            <strong>1305</strong>
+                            <span>SEGUINDO</span>
+                        </div>
+                    </div>
+                    <button class="botao-seguir">Seguir</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="cabecalho-card">
+                    <img src="/img/data.svg" alt="Beatriz Ferreira" class="imagem-perfil">
+                    <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
+                </div>
+                <div class="corpo-card">
+                    <h2>Beatriz Ferreira</h2>
+                    <span class="funcao">Cientista de Dados</span>
+                    <p>Transformo dados em insights poderosos. Fascinada por machine learning e visualização de dados, sempre extraindo informações claras.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Banco de Dados</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="rodape-card">
+                    <div class="estatisticas">
+                        <div class="estatistica">
+                            <strong>1048</strong>
+                            <span>SEGUIDORES</span>
+                        </div>
+                        <div class="estatistica">
+                            <strong>769</strong>
+                            <span>SEGUINDO</span>
+                        </div>
+                    </div>
+                    <button class="botao-seguir">Seguir</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="cabecalho-card">
+                    <img src="/img/data.svg" alt="Beatriz Ferreira" class="imagem-perfil">
+                    <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
+                </div>
+                <div class="corpo-card">
+                    <h2>Beatriz Ferreira</h2>
+                    <span class="funcao">Cientista de Dados</span>
+                    <p>Transformo dados em insights poderosos. Fascinada por machine learning e visualização de dados, sempre extraindo informações claras.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Banco de Dados</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="rodape-card">
+                    <div class="estatisticas">
+                        <div class="estatistica">
+                            <strong>890</strong>
+                            <span>SEGUIDORES</span>
+                        </div>
+                        <div class="estatistica">
+                            <strong>1100</strong>
+                            <span>SEGUINDO</span>
+                        </div>
+                    </div>
+                    <button class="botao-seguir">Seguir</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="cabecalho-card">
+                    <img src="/img/data.svg" alt="Beatriz Ferreira" class="imagem-perfil">
+                    <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
+                </div>
+                <div class="corpo-card">
+                    <h2>Beatriz Ferreira</h2>
+                    <span class="funcao">Cientista de Dados</span>
+                    <p>Transformo dados em insights poderosos. Fascinada por machine learning e visualização de dados, sempre extraindo informações claras.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Banco de Dados</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="rodape-card">
+                    <div class="estatisticas">
+                        <div class="estatistica">
+                            <strong>890</strong>
+                            <span>SEGUIDORES</span>
+                        </div>
+                        <div class="estatistica">
+                            <strong>1100</strong>
+                            <span>SEGUINDO</span>
+                        </div>
+                    </div>
+                    <button class="botao-seguir">Seguir</button>
                 </div>
             </article>
         </section>
     </main>
-
-    <nav class="bottom-nav">
-        <a href="#" class="nav-item active"><i class="fa-solid fa-border-all"></i></a>
-        <a href="#" class="nav-item"><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="#" class="nav-item"><i class="fa-regular fa-bell"></i></a>
-        <a href="#" class="nav-item"><i class="fa-regular fa-user"></i></a>
-    </nav>
 
     <script src="/js/script.js"></script>
 </body>

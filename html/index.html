@@ -14,48 +14,55 @@
 <body>
     <!-- barra de navegação -->
     <header class="cabecalho-topo">
+        
         <div class="logo">
             <a href="index.html">
-            <img src="/img/devs-logo.png" alt="Devs.io">
+                <img src="/img/devs-logo.png" alt="Devs.io">
             </a>
         </div>
-        <nav class="navegacao-topo">
-            <a href="index.html" class="ativo">Explorar</a>
-            <a href="#">Comunidade</a>
-            <a href="#">Serviços</a>
-            <a href="#">Sobre</a>
-        </nav>
-        <div class="acoes-cabecalho">
-            <button class="botao-icone" id="notificacoes"><i class="fa-solid fa-bell"></i></button>
-            <button class="botao-icone" id="alternar-tema"><i class="fa-solid fa-moon"></i></button>
-            
-            <div class="usuario-info">
-                <div class="avatar-wrapper" id="avatar-wrapper">
-                    <img src="/img/secure.svg" alt="User Avatar" class="avatar-usuario" id="avatar">
-                    <div class="avatar-overlay">
-                        <i class="fa-solid fa-camera"></i>
-                    </div>
-                </div>
 
-                <div class="dados-usuario">
-                    <span class="nome-usuario">Kaique do Vale</span>
-                    <a href="#" class="link-perfil">Meu perfil</a>
+        <!-- NOVO CONTAINER -->
+        <div class="menu-mobile" id="menu-mobile">
+            
+            <nav class="navegacao-topo">
+                <a href="index.html" class="ativo">Explorar</a>
+                <a href="#">Comunidade</a>
+                <a href="#">Serviços</a>
+                <a href="#">Sobre</a>
+            </nav>
+
+            <div class="acoes-cabecalho">
+                <button class="botao-icone"><i class="fa-solid fa-bell"></i></button>
+                <button class="botao-icone" id="alternar-tema"><i class="fa-solid fa-moon"></i></button>
+
+                <div class="usuario-info">
+                    <div class="avatar-wrapper">
+                        <img src="/img/secure.svg" class="avatar-usuario" id="avatar">
+                        <div class="avatar-overlay">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                    </div>
+
+                    <div class="dados-usuario">
+                        <span class="nome-usuario">Kaique do Vale</span>
+                        <a href="#" class="link-perfil">Meu perfil</a>
+                    </div>
                 </div>
             </div>
 
-            <input type="file" id="input-avatar" accept="image/*" style="display: none;">
         </div>
 
         <button class="menu-toggle" id="menu-toggle">
-        <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
         </button>
+
     </header>
 
     <!-- área dos cards -->
     <main class="container">
         <section class="secao-destaque">
             <h1>Conectando você aos melhores desenvolvedores</h1>
-            <p>Encontre profissionais qualificados para transformar suas ideias <br> em soluções digitais reais</p>
+            <p>Encontre profissionais qualificados para transformar suas ideias em soluções digitais reais</p>
         </section>
 
         <section class="grade-cards">
@@ -253,18 +260,18 @@
 
             <article class="card">
                 <div class="cabecalho-card">
-                    <img src="/img/data.svg" alt="Beatriz Ferreira" class="imagem-perfil">
+                    <img src="/img/data.svg" alt="Diego Nunes" class="imagem-perfil">
                     <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
                 </div>
                 <div class="corpo-card">
-                    <h2>Beatriz Ferreira</h2>
-                    <span class="funcao">Cientista de Dados</span>
-                    <p>Transformo dados em insights poderosos. Fascinada por machine learning e visualização de dados, sempre extraindo informações claras.</p>
+                    <h2>Diego Nunes</h2>
+                    <span class="funcao">Desenvolvedor Mobile</span>
+                    <p>Criador de apps que encantam usuários no iOS e Android. Sempre buscando a melhor experiência nativa.</p>
                     <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">TensorFlow</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">Banco de Dados</span>
+                        <span class="tag">React Native</span>
+                        <span class="tag">Swift</span>
+                        <span class="tag">Kotlin</span>
+                        <span class="tag">Expo</span>
                         <span class="tag">Firebase</span>
                     </div>
                 </div>
@@ -285,29 +292,29 @@
 
             <article class="card">
                 <div class="cabecalho-card">
-                    <img src="/img/data.svg" alt="Beatriz Ferreira" class="imagem-perfil">
+                    <img src="/img/data.svg" alt="Felipe Barros" class="imagem-perfil">
                     <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
                 </div>
                 <div class="corpo-card">
-                    <h2>Beatriz Ferreira</h2>
-                    <span class="funcao">Cientista de Dados</span>
-                    <p>Transformo dados em insights poderosos. Fascinada por machine learning e visualização de dados, sempre extraindo informações claras.</p>
+                    <h2>Felipe Barros</h2>
+                    <span class="funcao">Desenvolvedor Back-end</span>
+                    <p>Apaixonado por arquitetura de sistemas e APIs bem estruturadas, sempre focado em performance e escalabilidade.</p>
                     <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Java</span>
                         <span class="tag">SQL</span>
+                        <span class="tag">APIs REST</span>
                         <span class="tag">Banco de Dados</span>
-                        <span class="tag">Firebase</span>
                     </div>
                 </div>
                 <div class="rodape-card">
                     <div class="estatisticas">
                         <div class="estatistica">
-                            <strong>890</strong>
+                            <strong>954</strong>
                             <span>SEGUIDORES</span>
                         </div>
                         <div class="estatistica">
-                            <strong>1100</strong>
+                            <strong>982</strong>
                             <span>SEGUINDO</span>
                         </div>
                     </div>
@@ -317,29 +324,29 @@
 
             <article class="card">
                 <div class="cabecalho-card">
-                    <img src="/img/data.svg" alt="Beatriz Ferreira" class="imagem-perfil">
+                    <img src="/img/data.svg" alt="Mariana Costa" class="imagem-perfil">
                     <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
                 </div>
                 <div class="corpo-card">
-                    <h2>Beatriz Ferreira</h2>
-                    <span class="funcao">Cientista de Dados</span>
-                    <p>Transformo dados em insights poderosos. Fascinada por machine learning e visualização de dados, sempre extraindo informações claras.</p>
+                    <h2>Mariana Costa</h2>
+                    <span class="funcao">UI/UX Designer</span>
+                    <p>Crio experiências digitais intuitivas e visualmente atraentes. Gosto de transformar ideias em interfaces eficientes.</p>
                     <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">TensorFlow</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">Banco de Dados</span>
-                        <span class="tag">Firebase</span>
+                        <span class="tag">Figma</span>
+                        <span class="tag">Prototipação</span>
+                        <span class="tag">Design</span>
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">Wireframes</span>
                     </div>
                 </div>
                 <div class="rodape-card">
                     <div class="estatisticas">
                         <div class="estatistica">
-                            <strong>890</strong>
+                            <strong>2152</strong>
                             <span>SEGUIDORES</span>
                         </div>
                         <div class="estatistica">
-                            <strong>1100</strong>
+                            <strong>1290</strong>
                             <span>SEGUINDO</span>
                         </div>
                     </div>
@@ -353,6 +360,9 @@
         <i class="fa-solid fa-check-circle"></i>
         <span>Foto de perfil atualizada com sucesso!</span>
     </div>
+
+    <input type="file" id="input-avatar" accept="image/*" hidden>
+    <div class="overlay-modal" id="overlay"></div>
 
     <script src="/js/script.js"></script>
 </body>

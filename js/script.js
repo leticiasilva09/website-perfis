@@ -1,4 +1,68 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    const avatar = document.getElementById('avatar');
+    const inputAvatar = document.getElementById('input-avatar');
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const header = document.querySelector('.cabecalho-topo');
+
+    menuToggle.addEventListener('click', () => {
+        header.classList.toggle('menu-aberto');
+    });
+
+    // 🔥 NOVO: função para mostrar o toast de sucesso
+    function mostrarToast() {
+        const toast = document.getElementById('toast-sucesso');
+
+        toast.classList.add('mostrar');
+
+        setTimeout(() => {
+            toast.classList.remove('mostrar');
+        }, 3000);
+    }
+
+    // Clicar no avatar abre o seletor
+    avatar.addEventListener('click', () => {
+        inputAvatar.click();
+    });
+
+    // Quando escolher imagem
+    inputAvatar.addEventListener('change', function () {
+        const file = this.files[0];
+
+        if (file) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                avatar.src = e.target.result;
+
+            // tenta salvar, mas evita erro de limite
+            try {
+                localStorage.setItem('avatarUsuario', e.target.result);
+            } catch (error) {
+                console.warn('Imagem muito grande, não foi salva no localStorage');
+            }
+
+                // mostra o alerta de sucesso ao trocar a foto
+                mostrarToast();
+            };
+
+            reader.readAsDataURL(file);
+        }
+    });
+
+    const avatarWrapper = document.querySelector('.avatar-wrapper');
+
+    avatarWrapper.addEventListener('click', () => {
+        inputAvatar.click();
+    });
+
+    const avatarSalvo = localStorage.getItem('avatarUsuario');
+
+    if (avatarSalvo) {
+        avatar.src = avatarSalvo;
+    }
+
     // Interatividade dos botões "Seguir"
     const followButtons = document.querySelectorAll('.botao-seguir');
 

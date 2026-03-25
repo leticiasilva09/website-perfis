@@ -22,20 +22,40 @@
         <nav class="navegacao-topo">
             <a href="index.html" class="ativo">Explorar</a>
             <a href="#">Comunidade</a>
+            <a href="#">Serviços</a>
             <a href="#">Sobre</a>
         </nav>
         <div class="acoes-cabecalho">
             <button class="botao-icone" id="notificacoes"><i class="fa-solid fa-bell"></i></button>
             <button class="botao-icone" id="alternar-tema"><i class="fa-solid fa-moon"></i></button>
-            <img src="/img/secure.svg" alt="User Avatar" class="avatar-usuario">
+            
+            <div class="usuario-info">
+                <div class="avatar-wrapper" id="avatar-wrapper">
+                    <img src="/img/secure.svg" alt="User Avatar" class="avatar-usuario" id="avatar">
+                    <div class="avatar-overlay">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                </div>
+
+                <div class="dados-usuario">
+                    <span class="nome-usuario">Kaique do Vale</span>
+                    <a href="#" class="link-perfil">Meu perfil</a>
+                </div>
+            </div>
+
+            <input type="file" id="input-avatar" accept="image/*" style="display: none;">
         </div>
+
+        <button class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+        </button>
     </header>
 
     <!-- área dos cards -->
     <main class="container">
         <section class="secao-destaque">
             <h1>Conectando você aos melhores desenvolvedores</h1>
-            <p>Encontre profissionais qualificados para transformar <br> suas ideias em soluções digitais reais</p>
+            <p>Encontre profissionais qualificados para transformar suas ideias <br> em soluções digitais reais</p>
         </section>
 
         <section class="grade-cards">
@@ -328,6 +348,11 @@
             </article>
         </section>
     </main>
+
+    <div id="toast-sucesso" class="toast-sucesso">
+        <i class="fa-solid fa-check-circle"></i>
+        <span>Foto de perfil atualizada com sucesso!</span>
+    </div>
 
     <script src="/js/script.js"></script>
 </body>

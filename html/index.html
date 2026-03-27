@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devs.io</title>
     <link rel="stylesheet" href="/css/style.css">
+    <!-- ÍCONES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- FONTE -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- barra de navegação -->
+    <!-- BARRA DE NAVEGAÇÃO -->
     <header class="cabecalho-topo">
         
         <div class="logo">
@@ -21,7 +22,6 @@
             </a>
         </div>
 
-        <!-- NOVO CONTAINER -->
         <div class="menu-mobile" id="menu-mobile">
             
             <nav class="navegacao-topo">
@@ -57,13 +57,14 @@
 
     </header>
 
-    <!-- área dos cards -->
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="container">
         <section class="secao-destaque">
             <h1>Conectando você aos melhores desenvolvedores</h1>
             <p>Encontre profissionais qualificados para transformar suas ideias em soluções digitais reais</p>
         </section>
 
+        <!-- CARD 1 -->
         <section class="grade-cards">
             <article class="card">
                 <div class="cabecalho-card">
@@ -97,6 +98,7 @@
                 </div>
             </article>
 
+            <!-- CARD 2 -->
             <article class="card">
                 <div class="cabecalho-card">
                     <img src="/img/back.svg" alt="Carlos Mendes" class="imagem-perfil">
@@ -129,6 +131,7 @@
                 </div>
             </article>
 
+            <!-- CARD 3 -->
             <article class="card">
                 <div class="cabecalho-card">
                     <img src="/img/data.svg" alt="Beatriz Ferreira" class="imagem-perfil">
@@ -161,6 +164,7 @@
                 </div>
             </article>
 
+            <!-- CARD 4 -->
             <article class="card">
                 <div class="cabecalho-card">
                     <img src="/img/server.svg" alt="Bruno Oliveira" class="imagem-perfil">
@@ -193,6 +197,7 @@
                 </div>
             </article>
 
+            <!-- CARD 5 -->
             <article class="card">
                 <div class="cabecalho-card">
                     <img src="/img/front.svg" alt="Julia Soares" class="imagem-perfil">
@@ -225,6 +230,7 @@
                 </div>
             </article>
 
+            <!-- CARD 6 -->
             <article class="card">
                 <div class="cabecalho-card">
                     <img src="/img/secure.svg" alt="Eduardo Souza" class="imagem-perfil">
@@ -257,9 +263,10 @@
                 </div>
             </article>
 
+            <!-- CARD 7 -->
             <article class="card">
                 <div class="cabecalho-card">
-                    <img src="/img/data.svg" alt="Diego Nunes" class="imagem-perfil">
+                    <img src="/img/mobiledev.svg" alt="Diego Nunes" class="imagem-perfil">
                     <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
                 </div>
                 <div class="corpo-card">
@@ -289,9 +296,10 @@
                 </div>
             </article>
 
+            <!-- CARD 8 -->
             <article class="card">
                 <div class="cabecalho-card">
-                    <img src="/img/data.svg" alt="Felipe Barros" class="imagem-perfil">
+                    <img src="/img/back-end.svg" alt="Felipe Barros" class="imagem-perfil">
                     <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
                 </div>
                 <div class="corpo-card">
@@ -321,13 +329,14 @@
                 </div>
             </article>
 
+            <!-- CARD 9 -->
             <article class="card">
                 <div class="cabecalho-card">
-                    <img src="/img/data.svg" alt="Mariana Costa" class="imagem-perfil">
+                    <img src="/img/uiux.svg" alt="João Costa" class="imagem-perfil">
                     <div class="icone-funcao"><i class="fa-solid fa-palette"></i></div>
                 </div>
                 <div class="corpo-card">
-                    <h2>Mariana Costa</h2>
+                    <h2>João Costa</h2>
                     <span class="funcao">UI/UX Designer</span>
                     <p>Crio experiências digitais intuitivas e visualmente atraentes. Gosto de transformar ideias em interfaces eficientes.</p>
                     <div class="tags">
@@ -355,11 +364,13 @@
         </section>
     </main>
 
+    <!-- MENSAGEM DE SUCESSO -->
     <div id="toast-sucesso" class="toast-sucesso">
         <i class="fa-solid fa-check-circle"></i>
         <span>Foto de perfil atualizada com sucesso!</span>
     </div>
 
+    <!-- INPUT E OVERLAY DO AVATAR DE PERFIL -->
     <input type="file" id="input-avatar" accept="image/*" hidden>
     <div class="overlay-modal" id="overlay"></div>
 

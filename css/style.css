@@ -1,4 +1,4 @@
-/* Reset Básico e Variáveis */
+/* RESET BÁSICO E VARIÁVEIS */
 :root {
     --bg-color: #f5f7fa;
     --card-bg: #ffffff;
@@ -25,7 +25,7 @@ body {
     padding-bottom: 100px;
 }
 
-/* Header Topo */
+/* CABEÇALHO (NAVBAR) */
 .cabecalho-topo {
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@ body {
     color: var(--text-main);
 }
 
-/* LINK ATIVO - MODO CLARO */
+/* LINK ATIVO */
 .navegacao-topo a.ativo {
     color: var(--text-main);
 }
@@ -140,7 +140,7 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Overlay escuro */
+/* OVERLAY ESCURO */
 .avatar-overlay {
     position: absolute;
     top: 0;
@@ -158,7 +158,7 @@ body {
     transition: opacity 0.3s ease;
 }
 
-/* Ícone */
+/* ÍCONE */
 .avatar-overlay i {
     color: white;
     font-size: 14px;
@@ -173,28 +173,28 @@ body {
     filter: brightness(0.7);
 }
 
-/* Container geral do usuário */
+/* CONTAINER GERAL DO USUÁRIO */
 .usuario-info {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* Nome + link */
+/* NOME E LINK */
 .dados-usuario {
     display: flex;
     flex-direction: column;
     line-height: 1.2;
 }
 
-/* Nome */
+/* NOME */
 .nome-usuario {
     font-size: 0.9rem;
     font-weight: 600;
     color: var(--text-main);
 }
 
-/* Link */
+/* LINK */
 .link-perfil {
     font-size: 0.75rem;
     color: var(--text-main);
@@ -459,7 +459,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* Quando ativo */
 .toast-sucesso.mostrar {
     opacity: 1;
     transform: translateY(0);
@@ -492,7 +491,6 @@ body {
         text-align: center;
     }
 
-    /* Ajusta header */
     .cabecalho-topo {
         padding: 1rem 1.5rem;
     }
@@ -567,152 +565,152 @@ body {
     transform: translate(-50%, -50%) scale(1.05);
 }
 
-/* ================= MOBILE ================= */
+/* MOBILE */
 @media (max-width: 1150px) {
 
-    .menu-toggle {
-        position: absolute;
-        top: 1rem;
-        right: 1.5rem;
-        display: block;
-        font-size: 1.5rem;
-        background: none;
-        border: none;
-        cursor: pointer;
-        z-index: 1002;
-    }
+.menu-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    display: block;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1002;
+}
 
-    /* ESCONDE MENU NORMAL */
-    .menu-mobile {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 70%;
-        max-width: 320px;
-        height: 100vh;
-        background: var(--card-bg);
-        box-shadow: -20px 0 40px rgba(0,0,0,0.15);
-        overflow-y: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-        padding-top: 4rem;
-        gap: 2rem;
+/* ESCONDE MENU NORMAL */
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--card-bg);
+    box-shadow: -20px 0 40px rgba(0,0,0,0.15);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 4rem;
+    gap: 2rem;
 
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
-        z-index: 1001;
-    }
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1001;
+}
 
-    /* ABRE MENU */
-    .cabecalho-topo.menu-aberto .menu-mobile {
-        transform: translateX(0);
-    }
+/* ABRE MENU */
+.cabecalho-topo.menu-aberto .menu-mobile {
+    transform: translateX(0);
+}
 
-    /* FUNDO ESCURO */
-    .cabecalho-topo.menu-aberto::after {
-        content: "";
-        position: fixed;
-        inset: 0;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.4);
-        z-index: 1000;
-    }
+/* FUNDO ESCURO */
+.cabecalho-topo.menu-aberto::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1000;
+}
 
-    /* LINKS */
-    .navegacao-topo {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        width: 100%;
-        flex-shrink: 0;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid #e5e7eb;
-        order: 3;
-    }
+/* LINKS */
+.navegacao-topo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    flex-shrink: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    order: 3;
+}
 
-    .navegacao-topo a {
-        display: block;
-        width: 100%;
-        font-size: 1.1rem;
-        padding: 0.8rem 0;
-        border-bottom: 1px solid #e5e7eb;
-    }
+.navegacao-topo a {
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
 
-    /* AÇÕES */
-    .acoes-cabecalho {
-        position: absolute;
-        top: 1rem;
-        left: 1.5rem;
+/* AÇÕES */
+.acoes-cabecalho {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
 
-        display: flex;
-        flex-direction: row;
-        gap: 1.0rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.0rem;
 
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        flex-shrink: 0;
-        padding: 1rem 0;
-        order: 2;
-        margin-top: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0;
+    padding: 1rem 0;
+    order: 2;
+    margin-top: 0.5rem;
 
-        width: auto;
-        padding: 0;
-        margin: 0;
-        order: unset;
-    }
+    width: auto;
+    padding: 0;
+    margin: 0;
+    order: unset;
+}
 
-    .botao-icone {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 1rem;
-    }
+.botao-icone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
 
-    /* USUÁRIO */
-    .usuario-info {
-        order: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-        gap: 0.5rem;
-        padding-bottom: 1rem;
-        margin-top: 1rem;
-        border-bottom: 1px solid #e5e7eb;
-    }
+/* USUÁRIO */
+.usuario-info {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
 
-    .usuario-info span,
-    .usuario-info a {
+.usuario-info span,
+.usuario-info a {
     display: block;
     text-align: center;
 }
 
-    .avatar-wrapper {
-        width: 70px;
-        height: 70px;
-    }
+.avatar-wrapper {
+    width: 70px;
+    height: 70px;
+}
 
-    .avatar-usuario {
+.avatar-usuario {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 👈 ESSENCIAL */
+    object-fit: cover;
     border-radius: 50%;
     display: block;
 }
 
-    /* HEADER */
-    .cabecalho-topo {
-        position: relative;
-        padding: 1rem 1.5rem;
-    }
+/* HEADER */
+.cabecalho-topo {
+    position: relative;
+    padding: 1rem 1.5rem;
+}
 }
 
 /* MODO ESCURO */
@@ -725,18 +723,18 @@ body {
     --tag-text: #dbeafe;
 }
 
-/* Fundo geral */
+/* FUNDO GERAL */
 .dark-mode body {
     background-color: var(--bg-color);
     color: var(--text-main);
 }
 
-/* Header */
+/* CABEÇALHO */
 .dark-mode .cabecalho-topo {
     background-color: transparent;
 }
 
-/* Links */
+/* LINKS */
 .dark-mode .navegacao-topo a {
     color: var(--text-muted);
 }
@@ -749,18 +747,18 @@ body {
     color: #ffffff;
 }
 
-/* Cards */
+/* CARDS */
 .dark-mode .card {
     background: var(--card-bg);
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
-/* Texto */
+/* TEXTO */
 .dark-mode .corpo-card p {
     color: var(--text-muted);
 }
 
-/* Estatísticas */
+/* ESTATÍSTICAS */
 .dark-mode .estatisticas {
     background: #334155;
 }
@@ -769,7 +767,7 @@ body {
     background-color: #475569;
 }
 
-/* Botão seguir */
+/* BOTÃO SEGUIR */
 .dark-mode .botao-seguir {
     background: var(--primary-blue);
 }
@@ -785,7 +783,7 @@ body {
     color: var(--tag-text);
 }
 
-/* Ícones */
+/* ÍCONES */
 .dark-mode .botao-icone {
     color: var(--text-muted);
 }
@@ -794,7 +792,7 @@ body {
     background: rgba(255, 255, 255, 0.08);
 }
 
-/* LOGO PRETA → BRANCA */
+/* INVERTE A COR DA LOGO */
 .dark-mode .logo img {
     filter: brightness(0) invert(1);
 }

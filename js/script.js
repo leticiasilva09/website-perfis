@@ -21,22 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // TOAST
-    function mostrarToast() {
-        const toast = document.getElementById('toast-sucesso');
-        if (!toast) return;
-
-        toast.classList.add('mostrar');
-
-        setTimeout(() => {
-            toast.classList.remove('mostrar');
-        }, 3000);
-    }
-
     // AVATAR
     if (avatar && inputAvatar) {
 
-        // clique apenas no wrapper (remove conflito)
         if (avatarWrapper) {
             avatarWrapper.addEventListener('click', () => {
                 inputAvatar.click();
@@ -52,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 reader.onload = function (e) {
                     const imageData = e.target.result;
 
-                    // força atualização real da imagem
                     avatar.src = '';
                     setTimeout(() => {
                         avatar.src = imageData;
@@ -73,6 +59,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 this.value = '';
             }
         });
+
+        // MENSAGEM DE SUCESSO
+        function mostrarToast() {
+            const toast = document.getElementById('toast-sucesso');
+            if (!toast) return;
+
+            toast.classList.add('mostrar');
+
+            setTimeout(() => {
+                toast.classList.remove('mostrar');
+            }, 3000);
+        }
 
         // carregar avatar salvo
         const avatarSalvo = localStorage.getItem('avatarUsuario');
@@ -133,11 +131,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const followersElement = card.querySelector('.estatistica strong');
             if (!followersElement) return;
 
-            // garante que só pega número
+            // remove qualquer caractere que não seja número
             let followers = parseInt(followersElement.textContent.replace(/\D/g, ''));
 
+            // caso o valor não seja um número válido, define como 0
             if (isNaN(followers)) followers = 0;
 
+            // confere se o botão já está no estado "seguindo"
             if (this.classList.contains('seguindo')) {
                 this.classList.remove('seguindo');
                 this.textContent = 'Seguir';
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // NAVBAR INFERIOR
+    // NAVBAR
     const navItems = document.querySelectorAll('.bottom-nav .nav-item');
 
     navItems.forEach(item => {
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 🎨 CORES (AGORA DENTRO DO DOMCONTENTLOADED)
+    // CORES
     const paletteButtons = document.querySelectorAll('.icone-funcao');
 
     const colors = [
